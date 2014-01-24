@@ -10,6 +10,10 @@ angular.module('gdgilSiteApp', [
 				templateUrl: 'views/main.html',
 				controller: 'MainCtrl'
 			})
+			.when('/events', {
+				templateUrl: 'views/events.html',
+				controller: 'MainCtrl'
+			})
 			.otherwise({
 				redirectTo: '/'
 			});
