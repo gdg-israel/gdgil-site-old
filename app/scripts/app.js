@@ -2,7 +2,8 @@
 
 angular.module('gdgilSiteApp', [
 		'ngResource',
-		'ngRoute'
+		'ngRoute',
+		'ui.bootstrap'
 	])
 	.config(function ($routeProvider) {
 		$routeProvider
