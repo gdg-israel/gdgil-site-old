@@ -1,13 +1,26 @@
-<div class="jumbotron">
-	<h1>GDG ישראל!</h1>
+<div class="container-fluid">
+	<div id="menu" class="hidden-print animated fadeInLeft">
+        <div id="sidebar-discover-wrapper" class="hasNiceScroll" style="overflow-y: hidden;" tabindex="5000">
+            <ul class="list-unstyled">
+                <li class="active">
 
-	<p class="lead">
-		איזה כיף
-	</p>
-
-	<p>
-		<a class="btn btn-lg btn-success" ng-href="#">
-			נפלא!
-		</a>
-	</p>
+                    <a data-toggle="sidebar-discover" class="glyphicons home " href="#sidebar-discover-social"><span class="badge pull-right badge-primary hidden-md">7</span><i></i><span>Overview</span></a>
+                    <div class="sidebar-discover-menu" id="sidebar-discover-social">
+                        <div class="innerAll text-center border-bottom text-muted-dark">
+                            <strong>Overview</strong>
+                            <button class="btn btn-xs btn-default close-discover"><i class="fa fa-fw fa-times"></i></button>
+                        </div>
+                        <ul class="animated fadeIn">
+                            <li class="active"><a href="index.html?lang=en">Analytics</a></li>
+                            <li><a href="dashboard_users.html?lang=en">Users</a></li>
+                            <li><a href="medical_overview.html?lang=en">Medical</a></li>
+                            <li><a href="finances.html?lang=en">Financial</a></li>
+                            <li><a href="courses_2.html?lang=en">Learning</a></li>
+                        </ul>
+                    </div>
+                </li>
+        </div>
+	</div>
+    <div id="content" ng-href="#"></div>
+    <div id="footer" class="hidden-print animated fadeInUp"></div>
 </div>
