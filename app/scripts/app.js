@@ -16,7 +16,7 @@ angular.module('gdgilSiteApp', [
 			})
 			.when('/videos', {
 				templateUrl: 'views/videos.html',
-				controller: 'MainCtrl'
+				controller: 'VideosCtrl'
 			})
 			.otherwise({
 				redirectTo: '/'

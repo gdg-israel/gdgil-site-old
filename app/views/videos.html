@@ -2,76 +2,26 @@
 	<h2>Latest videos</h2>
 </div>
 <div class="row">
-	<div class="col-sm-6 col-md-4">
+	<div class="col-sm-6 col-md-4" ng-repeat="video in videos">
 		<div class="thumbnail">
-			<img src="http://img.youtube.com/vi/6RVSTZJNgXY/mqdefault.jpg"
-			     alt="Google Cloud Platform - What's Hot, New and Cool about it?">
+			<img src="http://img.youtube.com/vi/{{video.youtube}}/mqdefault.jpg"
+			     alt="{{video.title}}">
 
 			<div class="caption">
-				<h3>Google Cloud Platform - What's Hot, New and Cool about it?</h3>
+				<h3>{{video.title}}</h3>
 
 				<p>
-					by Ido Green
+					by {{video.author}}
 				</p>
 
 				<p>
-					How can developers leverage the 'mother of all clouds' in their next project? Lots of options... :)
-					That are using Google cloud platform. We will also see, how you built a powerful API on the cloud
-					and use it from mobile and modern web apps.
+					{{video.description}}
 				</p>
 
 				<p>
-					<a href="http://www.youtube.com/watch?v=6RVSTZJNgXY" class="btn btn-primary" role="button">Watch
-						Now</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://img.youtube.com/vi/7G7bkRsl2U0/mqdefault.jpg" alt="Goodbye jQuery!">
-
-			<div class="caption">
-				<h3>Goodbye jQuery!</h3>
-
-				<p>
-					by Shai Mesisterano
-				</p>
-
-				<p>
-					We will learn how to do stuff that we always thought needed jQuery. We will also look at how the web
-					apis work and what it takes to start programming with them.
-				</p>
-
-				<p>
-					<a href="http://www.youtube.com/watch?v=7G7bkRsl2U0" class="btn btn-primary" role="button">Watch
-						Now</a>
-				</p>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 col-md-4">
-		<div class="thumbnail">
-			<img src="http://img.youtube.com/vi/WUhNNWPWN4Y/mqdefault.jpg"
-			     alt="Angular.js &amp; Firebase - The Magic of 3-way Databinding - Uri Shaked [GDG CampusFest] ">
-
-			<div class="caption">
-				<h3>Angular.js &amp; Firebase - The Magic of 3-way Databinding</h3>
-
-				<p>
-					by Uri Shaked
-				</p>
-
-				<p>
-					Two-way data bindings is one of the core strength of Angular. By expanding this powerful concept,
-					Firebase enables us to create real-time 3-way data binding - Between view, controller and backend.
-					In this talk we are going to learn how to combine Angular.JS and Firebase to quickly build real-time
-					web applications.
-				</p>
-
-				<p>
-					<a href="http://www.youtube.com/watch?v=WUhNNWPWN4Y" class="btn btn-primary" role="button">Watch
-						Now</a>
+					<a href="http://www.youtube.com/watch?v={{video.youtube}}" class="btn btn-primary" role="button">
+						Watch Now
+					</a>
 				</p>
 			</div>
 		</div>
