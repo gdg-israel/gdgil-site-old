@@ -1,26 +1,46 @@
 <!doctype html>
+<!--
+ ________  ________  ________          ___  ________  ________  ________  _______   ___
+|\   ____\|\   ___ \|\   ____\        |\  \|\   ____\|\   __  \|\   __  \|\  ___ \ |\  \
+\ \  \___|\ \  \_|\ \ \  \___|        \ \  \ \  \___|\ \  \|\  \ \  \|\  \ \   __/|\ \  \
+ \ \  \  __\ \  \ \\ \ \  \  ___       \ \  \ \_____  \ \   _  _\ \   __  \ \  \_|/_\ \  \
+  \ \  \|\  \ \  \_\\ \ \  \|\  \       \ \  \|____|\  \ \  \\  \\ \  \ \  \ \  \_|\ \ \  \____
+   \ \_______\ \_______\ \_______\       \ \__\____\_\  \ \__\\ _\\ \__\ \__\ \_______\ \_______\
+    \|_______|\|_______|\|_______|        \|__|\_________\|__|\|__|\|__|\|__|\|_______|\|_______|
+                                              \|_________|
+-->
 <html class="no-js">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
+		<title>GDG Israel</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<!-- build:css styles/vendor.css -->
 		<!-- bower:css -->
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
 		<!-- endbower -->
 		<!-- endbuild -->
 		<!-- build:css({.tmp,app}) styles/main.css -->
 		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="assets/css/admin/module.admin.page.index.min.css"/>
 		<!-- endbuild -->
 	</head>
 	<body ng-app="gdgilSiteApp">
 		<!-- Add your site or application content here -->
-		<div class="container">
+		<div class="container-fluid">
 			<div ng-include="'views/sidebar.html'"></div>
-			<div ng-view></div>
+			<div id="content">
+				<div class="navbar hidden-print main" role="navigation">
+					<div class="user-action user-action-btn-navbar pull-left border-right">
+						<button class="btn btn-sm btn-navbar btn-inverse btn-stroke"><i class="fa fa-bars fa-2x"></i>
+						</button>
+					</div>
+				</div>
+				<div ng-view></div>
+
+			</div>
 			<div class="footer">
 				<p>♥ from the GDG team</p>
 			</div>
