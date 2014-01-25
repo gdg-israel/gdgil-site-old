@@ -19,7 +19,7 @@
                                     by {{video.speaker}}
                                 </p>
                                 <p>
-                                    {{video.description}}
+                                    {{video.description | characters:25 :true}}
                                 </p>
                                 <p>
                                     <a href="http://www.youtube.com/watch?v={{video.youtube}}" class="btn btn-primary" role="button">
@@ -36,14 +36,13 @@
                         <div class="thumbnail">
                             <img src="http://img.youtube.com/vi/{{video.youtube}}/mqdefault.jpg"
                                  alt="{{video.title}}">
-
                             <div class="caption">
                                 <h3>{{video.title}}</h3>
                                 <p>
                                     by {{video.speaker}}
                                 </p>
                                 <p>
-                                    {{video.description}}
+                                    {{video.description | characters:50 :true}}
                                 </p>
                                 <p>
                                     <a href="http://www.youtube.com/watch?v={{video.youtube}}" class="btn btn-primary" role="button">
