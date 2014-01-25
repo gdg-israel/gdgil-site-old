@@ -8,7 +8,7 @@ angular.module('gdgilSiteApp')
 			{title: 'Videos', link: '/videos', icon: 'facetime_video'},
 			{title: 'Events', link: '/events', icon: 'calendar'},
 			{title: 'Contents', link: '/contents', icon: 'notes'},
-			{title: 'Experts', link: '/experts', icon: 'parents'}
+			{title: 'Team', link: '/experts', icon: 'parents'}
 		];
 
 		$scope.isSelected = function (item) {
