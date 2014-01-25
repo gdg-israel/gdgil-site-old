@@ -1,127 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="">
-		<meta name="author" content="Google Developers Group Israel">
-		<link rel="shortcut icon" href="favicon.png">
+<!doctype html><!--
+ ________  ________  ________          ___  ________  ________  ________  _______   ___
+|\   ____\|\   ___ \|\   ____\        |\  \|\   ____\|\   __  \|\   __  \|\  ___ \ |\  \
+\ \  \___|\ \  \_|\ \ \  \___|        \ \  \ \  \___|\ \  \|\  \ \  \|\  \ \   __/|\ \  \
+ \ \  \  __\ \  \ \\ \ \  \  ___       \ \  \ \_____  \ \   _  _\ \   __  \ \  \_|/_\ \  \
+  \ \  \|\  \ \  \_\\ \ \  \|\  \       \ \  \|____|\  \ \  \\  \\ \  \ \  \ \  \_|\ \ \  \____
+   \ \_______\ \_______\ \_______\       \ \__\____\_\  \ \__\\ _\\ \__\ \__\ \_______\ \_______\
+    \|_______|\|_______|\|_______|        \|__|\_________\|__|\|__|\|__|\|__|\|_______|\|_______|
+                                              \|_________|
+--><html class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>GDG Israel</title><meta name="description" content=""><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="styles/29926dc3.vendor.css"><link rel="stylesheet" href="styles/4a1dcaf5.main.css"><body ng-app="gdgilSiteApp"><!-- Add your site or application content here --><div class="container-fluid"><div ng-include="'views/sidebar.html'"></div><div id="content"><div class="navbar hidden-print main" role="navigation"><div class="user-action user-action-btn-navbar pull-left border-right"><button class="btn btn-sm btn-navbar btn-inverse btn-stroke"><i class="fa fa-bars fa-2x"></i></button></div><ul class="main pull-right"><il><img src="images/0a73a61d.GDG_Israel_49p.png" alt="GDG Israel"></il></ul></div><div ng-view=""></div></div><div class="footer"><p>♥ from the GDG team</p></div></div><!-- Google Analytics: change UA-XXXXX-X to be your site's ID --><script>(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-		<title>Google Developers Group Israel - gdg.co.il</title>
-
-		<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-	</head>
-
-	<body>
-		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">GDG.co.il</a>
-				</div>
-				<div class="navbar-collapse collapse">
-				</div>
-			</div>
-		</div>
-
-		<div class="jumbotron">
-			<div class="container">
-				<h1>Welcome to GDG Israel!</h1>
-
-				<p>Google Developers Group (GDG) is a community based around Google technologies and open source
-					in general. We meet on a regular basis to discuss and share ideas, knowledge, network, and
-					experiences among the group and enjoy the company of fellow engineers.</p>
-
-				<p>
-					<a href="http://gdg-il.appspot.com/" class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a>
-				</p>
-			</div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<h2>Latest videos</h2>
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail">
-						<img src="http://img.youtube.com/vi/6RVSTZJNgXY/mqdefault.jpg" alt="Google Cloud Platform - What's Hot, New and Cool about it?">
-						<div class="caption">
-							<h3>Google Cloud Platform - What's Hot, New and Cool about it?</h3>
-							<p>
-								by Ido Green
-							</p>
-							<p>
-								How can developers leverage the 'mother of all clouds' in their next project? Lots of options... :) That are using Google cloud platform. We will also see, how you built a powerful API on the cloud and use it from mobile and modern web apps.
-							</p>
-							<p>
-								<a href="http://www.youtube.com/watch?v=6RVSTZJNgXY" class="btn btn-primary" role="button">Watch Now</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail">
-						<img src="http://img.youtube.com/vi/7G7bkRsl2U0/mqdefault.jpg" alt="Goodbye jQuery!">
-						<div class="caption">
-							<h3>Goodbye jQuery!</h3>
-							<p>
-								by Shai Mesisterano
-							</p>
-							<p>
-								We will learn how to do stuff that we always thought needed jQuery. We will also look at how the web apis work and what it takes to start programming with them.
-							</p>
-							<p>
-								<a href="http://www.youtube.com/watch?v=7G7bkRsl2U0" class="btn btn-primary" role="button">Watch Now</a>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-6 col-md-4">
-					<div class="thumbnail">
-						<img src="http://img.youtube.com/vi/WUhNNWPWN4Y/mqdefault.jpg" alt="Angular.js &amp; Firebase - The Magic of 3-way Databinding - Uri Shaked [GDG CampusFest] ">
-						<div class="caption">
-							<h3>Angular.js &amp; Firebase - The Magic of 3-way Databinding</h3>
-							<p>
-								by Uri Shaked
-							</p>
-							<p>
-								Two-way data bindings is one of the core strength of Angular. By expanding this powerful concept, Firebase enables us to create real-time 3-way data binding - Between view, controller and backend. In this talk we are going to learn how to combine Angular.JS and Firebase to quickly build real-time web applications.
-							</p>
-							<p>
-								<a href="http://www.youtube.com/watch?v=WUhNNWPWN4Y" class="btn btn-primary" role="button">Watch Now</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="row">
-				<h2>Past Events</h2>
-				<ul>
-					<li>
-						<a href="http://campusfest.gdg.co.il">GDG CampusFest 2013</a>
-					</li>
-					<li>
-						<a href="http://devfest.gdg.co.il">GDG DevFest 2013</a>
-					</li>
-				</ul>
-			</div>
-			<hr>
-
-			<footer>
-				<p>&copy; GDG Israel, 2014</p>
-			</footer>
-		</div>
-		<!-- /container -->
-
-		<script src="bower_components/jquery/jquery.min.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	</body>
-</html>
+			ga('create', 'UA-XXXXX-X');
+			ga('send', 'pageview');</script><!--[if lt IE 9]>
+		<script src="bower_components/es5-shim/es5-shim.js"></script>
+		<script src="bower_components/json3/lib/json3.min.js"></script>
+		<![endif]--><script src="scripts/f25c058a.vendor.js"></script><script src="scripts/36dac0b0.scripts.js"></script>
