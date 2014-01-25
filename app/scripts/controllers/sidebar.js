@@ -7,7 +7,7 @@ angular.module('gdgilSiteApp')
 			{title: 'About', link: '/about', icon: 'beer'},
 			{title: 'Events', link: '/events', icon: 'calendar'},
 			{title: 'Videos', link: '/videos', icon: 'facetime_video'},
-			{title: 'Content', link: '/content', icon: 'notes'},
+			{title: 'Contents', link: '/contents', icon: 'notes'},
 			{title: 'Experts', link: '/experts', icon: 'parents'}
 		];
 

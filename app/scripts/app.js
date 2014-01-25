@@ -24,6 +24,10 @@ angular.module('gdgilSiteApp', [
 				templateUrl: 'views/articles.html',
 				controller: 'ArticlesCtrl'
 			})
+            .when('/contents', {
+                templateUrl: 'views/contents.html',
+                controller: 'MainCtrl'
+            })
 			.otherwise({
 				redirectTo: '/'
 			});
