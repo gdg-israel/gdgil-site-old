@@ -129,10 +129,6 @@ img {
     padding: 1px
 }
 
-img:hover {
-    border: 1px solid #3695d5
-}
-
 .ie .img-responsive {
     max-width: 100%;
     height: auto;
