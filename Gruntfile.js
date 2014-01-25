@@ -311,6 +311,12 @@ module.exports = function (grunt) {
 						cwd: 'app/assets/components/library/icons/glyphicons/assets',
 						src: 'fonts/**',
 						dest: '<%= yeoman.dist %>'
+					},
+					{
+						expand: true,
+						cwd: 'app/bower_components/font-awesome',
+						src: 'fonts/**',
+						dest: '<%= yeoman.dist %>'
 					}
 				]
 			},
