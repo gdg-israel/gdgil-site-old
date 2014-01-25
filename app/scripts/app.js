@@ -13,7 +13,7 @@ angular.module('gdgilSiteApp', [
 				controller: 'MainCtrl'
 			})
 			.when('/events', {
-				templateUrl: 'views/events.html',
+				templateUrl: 'views/under.html',
 				controller: 'MainCtrl'
 			})
 			.when('/videos', {
@@ -25,7 +25,7 @@ angular.module('gdgilSiteApp', [
 				controller: 'ArticlesCtrl'
 			})
 			.when('/contents', {
-				templateUrl: 'views/contents.html',
+				templateUrl: 'views/under.html',
 				controller: 'MainCtrl'
 			})
 			.when('/item/:id', {
@@ -33,7 +33,7 @@ angular.module('gdgilSiteApp', [
 				controller: 'ContentItemCtrl'
 			})
 			.when('/experts', {
-				templateUrl: 'views/experts.html',
+				templateUrl: 'views/under.html',
 				controller: 'MainCtrl'
 			})
 			.when('/about', {
