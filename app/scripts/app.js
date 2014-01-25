@@ -3,7 +3,8 @@
 angular.module('gdgilSiteApp', [
 		'ngResource',
 		'ngRoute',
-		'ui.bootstrap'
+		'ui.bootstrap',
+		'truncate'
 	])
 	.config(function ($routeProvider) {
 		$routeProvider
