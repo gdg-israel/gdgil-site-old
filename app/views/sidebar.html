@@ -1,19 +1,9 @@
-<div id="menu" class="hidden-print">
+<div id="menu" class="hidden-print" ng-controller="SidebarCtrl">
 	<div id="sidebar-discover-wrapper">
 		<ul class="list-unstyled">
-
-            <li class="active"><a href="#/" class="glyphicons home" ><i></i><span>GDG Israel</span></a></li>
-
-            <li><a href="#/about" class="glyphicons beer"><i></i><span>About</span></a></li>
-
-			<li><a href="#/events" class="glyphicons calendar"><i></i><span>Events</span></a></li>
-
-			<li><a href="#/videos" class="glyphicons facetime_video"><i></i><span>Videos</span></a></li>
-
-            <li><a href="#/content" class="glyphicons notes"><i></i><span>Content</span></a></li>
-
-			<li><a href="#/experts" class="glyphicons parents"><i></i><span>Experts</span></a></li>
-
+			<li ng-repeat="item in items" ng-class="{active: isSelected(item)}">
+				<a href="#{{item.link}}" class="glyphicons {{item.icon}}"><i></i><span>{{item.title}}</span></a>
+			</li>
 		</ul>
 	</div>
 </div>
