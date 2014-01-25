@@ -1,35 +1,41 @@
 [
 	{
+		"id": "10",
 		"title": "Google Cloud Platform - What's Hot, New and Cool about it?",
 		"youtube": "6RVSTZJNgXY",
 		"speaker": "Ido Green",
 		"description": "How can developers leverage the 'mother of all clouds' in their next project? Lots of options... :) That are using Google cloud platform. We will also see, how you built a powerful API on the cloud and use it from mobile and modern web apps."
 	},
 	{
+		"id": "20",
 		"title": "The Magic of Crowd Testing [GDG CampusFest]",
 		"youtube": "uMOFdqNapg8",
 		"speaker": "Yair Bar-On",
 		"description": "Yair's presentation will be a live crowd testing session, showing on stage how easy and powerful can crowd testing be. "
 	},
 	{
+		"id": "40",
 		"title": "Mobile Health [GDG CampusFest]",
 		"youtube": "laQAO8xOVTg",
 		"speaker": "Amit Safir",
 		"description": "How is MobileOCT leveraging technical capabilities of smartphones to save the lives of a quarter million women around the globe?"
 	},
 	{
+		"id": "50",
 		"title": "Things you did not know about Drawables [GDG CampusFest]",
 		"youtube": "OyIxhmQHnao",
 		"speaker": "Ran Nachmany",
 		"description": "We all use them on a daily basis but very few know how powerful and awesome they can be. Come and learn about Android Drawables, Shaders and other techniques that you can use to make your app more efficient and increase its sex appeal"
 	},
 	{
+		"id": "60",
 		"title": "Playing with the natives; the Android \"youtube\" native player",
 		"youtube": "iuoi_qztil4",
 		"speaker": "Royi Ben Yosef",
 		"description": "ever wanted to show \"youtube\" video in your app? well... here's how!"
 	},
 	{
+		"id": "74",
 		"title": "Angular.js & Firebase - The Magic of 3-way Databinding [GDG CampusFest]",
 		"youtube": "WUhNNWPWN4Y",
 		"speaker": "Uri Shaked",
