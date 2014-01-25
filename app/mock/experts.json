@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Ran Nachmany",
+        "image": "images/experts/ran_nachmany.jpg",
+        "link": "experts/ran_nachmany",
+        "introduction": "My name is Ran Nachmany, I am an entrepreneur, programmer, hacker and most important married to amazing woman and father of the two most gorgeous kids on the planet.",
+        "linkedin": "http://il.linkedin.com/in/rannachmany"
+    },
+    {
+        "name": "Royi benyossef",
+        "image": "images/experts/royi_benyossef.jpg",
+        "link": "experts/royi_benyossef",
+        "introduction": "i've been managing an Android developers group that meets (almost) every month for the past year and i've been giving lectures on this subject to everyone who wanted to listen from begginers to experts.",
+        "linkedin": "http://il.linkedin.com/in/royiby‎"
+    },
+    {
+        "name": "Ron Reiter",
+        "image": "images/experts/ron_reiter.jpg",
+        "link": "experts/ron_reiter",
+        "introduction": "HTML5 Google Developer Expert<br>Technical mentor for startups at Campus Tel Aviv",
+        "linkedin": "http://il.linkedin.com/pub/ron-reiter/1/59b/593"
+    },
+
+    {
+        "name": "Jonathan Schipper",
+        "image": "images/experts/jonathan_schipper.jpg",
+        "link": "experts/jonathan_schipper",
+        "introduction": "Jonathan has set to create the first incubator for wearable apps and devices in collaboration with London-based Nonlinear Labs and is currently recieving applications for the first intake with residencies starting in 2014.",
+        "linkedin": "http://il.linkedin.com/pub/jonathan-schipper/19/545/b63‎"
+    },
+    {
+        "name": "Daniel Gwerzman",
+        "image": "images/experts/daniel_gwerzman.jpg",
+        "link": "experts/daniel_gwerzman",
+        "introduction": "Technological Strategy Advisor",
+        "linkedin": "il.linkedin.com/pub/daniel-gwerzman/8/4b4/817‎"
+    },
+    {
+        "name": "Omri Baumer",
+        "image": "images/experts/omri_baumer.jpg",
+        "link": "experts/omri_baumer",
+        "introduction": "",
+        "linkedin": "http://il.linkedin.com/pub/omri-baumer/2/610/810"
+    }
+]

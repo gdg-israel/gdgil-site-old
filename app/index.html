@@ -28,6 +28,7 @@
 		<!-- build:css({.tmp,app}) styles/main.css -->
 		<link rel="stylesheet" href="styles/main.css">
 		<link rel="stylesheet" href="assets/css/admin/module.admin.page.index.min.css"/>
+        <link rel="stylesheet" href="assets/css/admin/module.admin.page.gallery.min.css" >
 		<!-- endbuild -->
 	</head>
 	<body ng-app="gdgilSiteApp">
@@ -47,8 +48,8 @@
 				<div ng-view></div>
 
 			</div>
-			<div class="footer">
-				<p>♥ from the GDG team</p>
+			<div id="footer" class="footer hidden-print animated fadeInUp">
+				<div class="copy">♥ from the GDG team</div>
 			</div>
 		</div>
 
@@ -91,10 +92,14 @@
 		<script src="scripts/app.js"></script>
 		<script src="scripts/controllers/main.js"></script>
 		<script src="scripts/controllers/videos.js"></script>
+        <script src="scripts/controllers/experts.js"></script>
         <script src="scripts/controllers/articles.js"></script>
 		<script src="scripts/controllers/sidebar.js"></script>
 		<script src="scripts/controllers/content.js"></script>
 		<script src="scripts/services/contentProvider.js"></script>
 		<!-- endbuild -->
+
+        <!--script src="assets/components/library/modernizr/modernizr.js?v=v1.0.0"></script-->
+
 	</body>
 </html>

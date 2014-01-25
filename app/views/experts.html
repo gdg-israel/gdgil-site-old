@@ -1,21 +1,86 @@
-<div class="innerLR col-md-offset-2">
+<div class="innerLR">
 
     <h2 class="margin-none">Experts</h2>
 
     <div class="separator-h"></div>
 
     <div class="gridalicious" data-gridalicious-gutter="0" data-gridalicious-width="280" data-toggle="gridalicious">
-        <div id="item0FcC4m" class="galcolumn" style="width: 25%; padding-left: 0px; padding-bottom: 0px; float: left; -moz-box-sizing: border-box;">
-            <div class="widget widget-heading-simple widget-body-white widget-pinterest" style="margin-bottom: 0px; opacity: 1;">
+        <div class="galcolumn"
+             style="width: 25%; padding-left: 0px; padding-bottom: 0px; float: left; -moz-box-sizing: border-box;">
+            <div ng-repeat="expert in experts" ng-show="$index % 4 == 0"
+                 class="widget widget-heading-simple widget-body-white widget-pinterest"
+                 style="margin-bottom: 0px; opacity: 1;">
                 <div class="widget-body padding-none">
-                    <a data-gallery="" class="thumb animated fadeInDown" href="../assets/images/people/250/1.jpg" style="visibility: visible;">
-                        <img alt="photo" src="../assets/images/people/250/1.jpg" style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                    <a data-gallery="" class="thumb animated fadeInDown" href="{{ expert.linkedin }}" target="_blank"
+                       style="visibility: visible;">
+                        <img alt="photo" src="{{ expert.image }}"
+                             style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
                     </a>
+
                     <div class="description col-md-12">
-                        <h5 class="text-uppercase">Photo title</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, consequuntur iure commodi omnis at pariatur quis hic mollitia impedit error.</p>			</div>
+                        <h5 class="text-uppercase">{{ expert.name }}</h5>
+
+                        <p>{{ expert.introduction }}</p></div>
                 </div>
             </div>
         </div>
+        <div class="galcolumn"
+             style="width: 25%; padding-left: 0px; padding-bottom: 0px; float: left; -moz-box-sizing: border-box;">
+            <div ng-repeat="expert in experts" ng-show="$index % 4 == 1"
+                 class="widget widget-heading-simple widget-body-white widget-pinterest"
+                 style="margin-bottom: 0px; opacity: 1;">
+                <div class="widget-body padding-none">
+                    <a data-gallery="" class="thumb animated fadeInDown" href="{{ expert.linkedin }}" target="_blank"
+                       style="visibility: visible;">
+                        <img alt="photo" src="{{ expert.image }}"
+                             style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                    </a>
+
+                    <div class="description col-md-12">
+                        <h5 class="text-uppercase">{{ expert.name }}</h5>
+
+                        <p>{{ expert.introduction }}</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="galcolumn"
+             style="width: 25%; padding-left: 0px; padding-bottom: 0px; float: left; -moz-box-sizing: border-box;">
+            <div ng-repeat="expert in experts" ng-show="$index % 4 == 2"
+                 class="widget widget-heading-simple widget-body-white widget-pinterest"
+                 style="margin-bottom: 0px; opacity: 1;">
+                <div class="widget-body padding-none">
+                    <a data-gallery="" class="thumb animated fadeInDown" href="{{ expert.linkedin }}" target="_blank"
+                       style="visibility: visible;">
+                        <img alt="photo" src="{{ expert.image }}"
+                             style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                    </a>
+
+                    <div class="description col-md-12">
+                        <h5 class="text-uppercase">{{ expert.name }}</h5>
+
+                        <p>{{ expert.introduction }}</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="galcolumn"
+             style="width: 25%; padding-left: 0px; padding-bottom: 0px; float: left; -moz-box-sizing: border-box;">
+            <div ng-repeat="expert in experts" ng-show="$index % 4 == 3"
+                 class="widget widget-heading-simple widget-body-white widget-pinterest"
+                 style="margin-bottom: 0px; opacity: 1;">
+                <div class="widget-body padding-none">
+                    <a data-gallery="" class="thumb animated fadeInDown" href="{{ expert.linkedin }}" target="_blank"
+                       style="visibility: visible;">
+                        <img alt="photo" src="{{ expert.image }}"
+                             style="width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto;">
+                    </a>
+
+                    <div class="description col-md-12">
+                        <h5 class="text-uppercase">{{ expert.name }}</h5>
+
+                        <p>{{ expert.introduction }}</p></div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

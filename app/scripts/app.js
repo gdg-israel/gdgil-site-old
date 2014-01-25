@@ -33,8 +33,8 @@ angular.module('gdgilSiteApp', [
 				controller: 'ContentItemCtrl'
 			})
 			.when('/experts', {
-				templateUrl: 'views/under.html',
-				controller: 'MainCtrl'
+				templateUrl: 'views/experts.html',
+				controller: 'ExpertsCtrl'
 			})
 			.when('/about', {
 				templateUrl: 'views/about.html',
