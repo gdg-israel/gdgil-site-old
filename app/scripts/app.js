@@ -32,14 +32,14 @@ angular.module('gdgilSiteApp', [
 				templateUrl: 'views/content.html',
 				controller: 'ContentItemCtrl'
 			})
-            .when('/experts', {
-                templateUrl: 'views/experts.html',
-                controller: 'MainCtrl'
-            })
-            .when('/about', {
-                templateUrl: 'views/about.html',
-                controller: 'MainCtrl'
-            })
+			.when('/experts', {
+				templateUrl: 'views/experts.html',
+				controller: 'MainCtrl'
+			})
+			.when('/about', {
+				templateUrl: 'views/about.html',
+				controller: 'MainCtrl'
+			})
 			.otherwise({
 				redirectTo: '/'
 			});
