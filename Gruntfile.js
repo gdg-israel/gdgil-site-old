@@ -296,7 +296,8 @@ module.exports = function (grunt) {
 							'views/{,*/}*.html',
 							'bower_components/**/*',
 							'images/{,*/}*.{webp}',
-							'fonts/*'
+							'fonts/*',
+							'mock/*'
 						]
 					},
 					{
@@ -304,6 +305,12 @@ module.exports = function (grunt) {
 						cwd: '.tmp/images',
 						dest: '<%= yeoman.dist %>/images',
 						src: ['generated/*']
+					},
+					{
+						expand: true,
+						cwd: 'app/assets/components/library/icons/glyphicons/assets',
+						src: 'fonts/**',
+						dest: '<%= yeoman.dist %>'
 					}
 				]
 			},
