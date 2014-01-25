@@ -6,8 +6,8 @@ angular.module('gdgilSiteApp')
 			{title: 'GDG Israel', link: '/', icon: 'home'},
 			{title: 'About', link: '/about', icon: 'beer'},
 			//{title: 'Events', link: '/events', icon: 'calendar'},
-			{title: 'Videos', link: '/videos', icon: 'facetime_video'},
-			{title: 'Contents', link: '/contents', icon: 'notes'}//,
+			{title: 'Videos', link: '/videos', icon: 'facetime_video'}//,
+			//{title: 'Contents', link: '/contents', icon: 'notes'}//,
 			//{title: 'Experts', link: '/experts', icon: 'parents'}
 		];
 
