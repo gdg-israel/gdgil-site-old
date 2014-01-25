@@ -1,0 +1,182 @@
+@import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+
+//
+// Gallery
+// --------------------------------------------------
+
+// Gallery
+// ------------------------- //
+
+.gallery {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li {
+			.thumb {
+				position: relative;
+				display: block;
+				padding: 5px;
+				margin-bottom: 10px;
+				z-index: 1;
+				overflow: hidden;
+			}
+			&.col-md-2:nth-child(6n+7) {
+				margin-left: 0;
+			}
+			&.col-md-3:nth-child(4n+5) {
+				margin-left: 0;
+			}
+			&.col-md-4:nth-child(3n+4) {
+				margin-left: 0;
+			}
+		}
+	}
+	&.gallery-masonry {
+		li {
+			&[class*="col-md-"] {
+				margin-left: 0;
+			}
+		}
+	}
+	&.gallery-2 {
+		li {
+			.thumb {
+				padding: 0;
+				img {
+					border-color: #4c4c4c;
+				}
+			}
+		}
+	}
+}
+
+.thumb {
+	display: block;
+	padding: 3px;
+	border: 1px solid blue;
+	background: #fff;
+}
+
+// Thumbnails
+// ------------------------- //
+
+.thumbnails {
+	margin: 0;
+	> li {
+		margin-bottom: 14px;
+		.thumbnail {
+			border-color: blue;
+			background: #ffffff;
+			@include box-shadow(none);
+			.caption {
+				color: #525252;
+			}
+		}
+		a.thumbnail:hover, a.thumbnail:focus {
+			border-color: red;
+			-webkit-box-shadow: 0 1px 4px fade(red, 25%);
+			-moz-box-shadow: 0 1px 4px fade(red, 25%);
+			box-shadow: 0 1px 4px fade(red, 25%);
+			text-decoration: none;
+		}
+	}
+}
+
+.thumbnail {
+	border-color: blue;
+}
+
+a.thumbnail {
+	.caption {
+		display: block;
+	}
+}
+
+a.thumbnail:hover, a.thumbnail:focus {
+	border-color: red;
+	-webkit-box-shadow: 0 1px 4px fade(red, 25%);
+	-moz-box-shadow: 0 1px 4px fade(red, 25%);
+	box-shadow: 0 1px 4px fade(red, 25%);
+	text-decoration: none;
+}
+
+// Custom prettyphoto overlay
+div.pp_overlay {
+	background: #fff;
+}
+
+// Pinterest style widget
+// ---------------------------
+.widget-pinterest {
+	h5 {
+		font-weight: 700;
+	}
+	.widget-body {
+		padding: 0;
+		border: none !important;
+		.description {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			line-height: 16px;
+			padding: 20px;
+			p:last-of-type {
+				margin: 0;
+			}
+		}
+		.thumb {
+			padding: 0;
+			border: none;
+			img {
+				width: 100%;
+				padding: 0;
+				border: none;
+			}
+		}
+	}
+}
+
+.widget-pinterest {
+	margin: 1px;
+	.widget-body {
+		position: relative;
+		overflow: hidden;
+		.description {
+			background: #fff;
+			position: absolute;
+			opacity: 0;
+			bottom: 0;
+		}
+	}
+	&:hover .widget-body {
+		.description {
+			opacity: 1
+		}
+	}
+	&.active .description {
+		opacity: 1;
+	}
+}
+
+.widget-pinterest {
+	@include transition(all 100ms ease);
+	.widget-body {
+		.thumb {
+			@include transition(all 2000ms ease);
+		}
+		.description {
+			@include transition(all 1000ms ease);
+		}
+	}
+	&:hover {
+		@include transition(all 1000ms ease);
+		z-index: 1000;
+		@include transform(scale(1.08));
+		.thumb {
+			@include transform(scale(1.1));
+		}
+	}
+}
