@@ -8,7 +8,7 @@
         <div class="col-sm-12">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="widget" ng-repeat="video in videos" ng-show="$index % 3 != 0">
+                    <div class="widget" ng-repeat="video in videos" ng-show="$index % 2 != 0">
                         <div class="thumbnail">
                             <img src="http://img.youtube.com/vi/{{video.youtube}}/mqdefault.jpg"
                                  alt="{{video.title}}">
@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="col-lg-4">
-                    <div class="widget" ng-repeat="video in videos" ng-show="$index % 3 == 0">
+                    <div class="widget" ng-repeat="video in videos" ng-show="$index % 2 == 0">
                         <div class="thumbnail">
                             <img src="http://img.youtube.com/vi/{{video.youtube}}/mqdefault.jpg"
                                  alt="{{video.title}}">
