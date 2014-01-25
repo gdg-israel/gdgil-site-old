@@ -7,11 +7,11 @@ gdg.co.il website
 
 1. Install node.js (version 0.10.0 or newer), npm, ruby (version 1.9.2 or newer), git command-line client (version 1.8.4 or newer)
 2. Run the following commands (as super-user):
-   # `npm install -g bower grunt_cli`
-   # `gem install compass`
+   * `npm install -g bower grunt_cli`
+   * `gem install compass`
 3. Clone the project and run the following commands in the project directory:
-   # `npm install`
-   # `bower install`
+   * `npm install`
+   * `bower install`
    
 ## Development instructions
 
