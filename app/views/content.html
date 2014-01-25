@@ -1,6 +1,6 @@
 <div class="innerLR col-md-offset-2">
 
-    <h2 class="margin-none">Title</h2>
+    <h2 class="margin-none">{{item.title}}</h2>
 
     <div class="separator-h"></div>
 
@@ -8,12 +8,11 @@
         <div class="col-md-9 widget">
             <div class="separator"></div>
             <div class="media">
-                <iframe width="720" height="405" src="//www.youtube.com/embed/AA9D68TK-xE?rel=0" frameborder="0" allowfullscreen></iframe>
+                <iframe width="720" height="405" src="//www.youtube.com/embed/{{item.youtube}}?rel=0" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="separator"></div>
             <div class="media">
-                קטעים נבחרים מתוך הרצאה של ענב גנד גלילי בכנס של איגוד האינטרנט הישראלי:
-                http://youtu.be/bLW6knGHluQ
+				{{item.description}}
             </div>
             <div class="separator"></div>
 
