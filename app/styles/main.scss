@@ -113,11 +113,12 @@ p {
 }
 
 img {
-  padding: 1px
+  padding: 1px;
+  border:none;
 }
 
 img:hover {
-  border: 1px solid #3695d5
+  border:none;
 }
 
 .ie .img-responsive {
