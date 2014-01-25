@@ -17,6 +17,7 @@ module.exports = function (config) {
 			'app/bower_components/angular-resource/angular-resource.js',
 			'app/bower_components/angular-truncate/dist/angular-truncate.js',
 			'app/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
+			'app/bower_components/underscore/underscore.js',
 			'app/scripts/*.js',
 			'app/scripts/**/*.js',
 			'test/spec/**/*.js'
