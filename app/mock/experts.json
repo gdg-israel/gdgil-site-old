@@ -33,7 +33,14 @@
         "image": "images/experts/daniel_gwerzman.jpg",
         "link": "experts/daniel_gwerzman",
         "introduction": "Technological Strategy Advisor",
-        "linkedin": "il.linkedin.com/pub/daniel-gwerzman/8/4b4/817‎"
+        "linkedin": "http://il.linkedin.com/pub/daniel-gwerzman/8/4b4/817‎"
+    },
+    {
+        "name": "Mor Klier",
+        "image": "images/experts/mor_klier.jpg",
+        "link": "experts/mor_klier",
+        "introduction": "Technological Strategy Advisor",
+        "linkedin": "http://il.linkedin.com/in/morklier‎‎"
     },
     {
         "name": "Omri Baumer",
