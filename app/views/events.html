@@ -1,1 +1,75 @@
-Events!
+<div class="innerLR col-md-offset-2">
+
+    <h1 class="margin-none">Events</h1>
+
+    <div class="separator-h"></div>
+
+    <div class="row">
+        <div class="col-md-9 widget">
+
+            <div class="separator-h"></div>
+            <!--div class="separator bottom">
+				<span class="pull-right">
+					<label class="strong">Sort by:</label>
+					<select class="selectpicker margin-none" data-style="btn-default btn-xs" style="display: none;">
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                    </select><div class="btn-group bootstrap-select margin-none open">
+                    <button type="button" class="btn dropdown-toggle selectpicker btn-default btn-xs"
+                            data-toggle="dropdown" title="Option"><span class="filter-option pull-left">Option</span>&nbsp;<span
+                            class="caret"></span></button>
+                    <div class="dropdown-menu open" style="max-height: 233px; overflow: hidden; min-height: 0px;">
+                        <ul class="dropdown-menu inner selectpicker" role="menu"
+                            style="max-height: 231px; overflow-y: auto;">
+                            <li rel="0" class="selected"><a tabindex="0" class="" style=""><span
+                                    class="text">Option</span><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a>
+                            </li>
+                            <li rel="1"><a tabindex="0" class="" style=""><span class="text">Option</span><i
+                                    class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+                            <li rel="2"><a tabindex="0" class="" style=""><span class="text">Option</span><i
+                                    class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+				</span>
+
+                <div class="clearfix"></div>
+            </div-->
+
+            <table class="table table-condensed table-striped table-primary table-vertical-center checkboxs">
+                <thead>
+                <tr>
+                    <th class="">EVENT</th>
+                    <th class="">OWNER</th>
+                    <th class="">LOCATION</th>
+                    <th class="center">DATE</th>
+                    <th class="center"></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <!-- Item -->
+                <tr ng-repeat="event in events">
+                    <td class="">{{ event.name }}</td>
+                    <td class="">{{ event.owner }}</td>
+                    <td>{{ event.location }}</td>
+                    <td class="center">{{ event.date | date:'dd/MM/yyyy' }}</td>
+                    <td class="center"><a href="{{ event.link }}" target="_blank">Link</a></td>
+
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+        <!-- //  End Col -->
+
+        <div class="col-md-4">
+
+
+        </div>
+        <!-- //End Col -->
+
+    </div>
+</div>
