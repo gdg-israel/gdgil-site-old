@@ -29,8 +29,8 @@
     {
         "id" : "4",
         "name" : "event name",
-        "owner" : "DGD - Tel Aviv",
-        "location" : "Tel-Aviv",
+        "owner" : "DGD - Haifa",
+        "location" : "Haifa",
         "date" : 1288323623006,
         "link" : "http://www.google.com",
         "description" : "description"
