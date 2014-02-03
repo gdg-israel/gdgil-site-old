@@ -13,7 +13,7 @@
                             <select ng-model='ownerSearch' ng-options="event.owner for event in events | unique:'owner' | orderBy:'owner'" class="selectpicker margin-none" data-style="btn-default btn-xs" style="border: none;">
                                 <option value="">Owner...</option>
                             </select>
-                            <select ng-model='locationSearch' ng-options="event.location for event in events | unique:'location' | filter:ownerSearch.owner | orderBy:'location'" class="selectpicker margin-none" data-style="btn-default btn-xs" style="border: none;">
+                            <select ng-model='locationSearch' ng-options="event.location for event in events |  filter:ownerSearch.owner | unique:'location' | orderBy:'location'" class="selectpicker margin-none" data-style="btn-default btn-xs" style="border: none;">
                                 <option value="">Location...</option>
                             </select>
                         </span>
@@ -35,7 +35,7 @@
                         <tbody>
 
                         <!-- Item -->
-                        <tr ng-repeat="event in events | filter:ownerSearch.owner | filter:locationSearch.location">
+                        <tr ng-repeat="event in events | filter:{owner:ownerSearch.owner, location:locationSearch.location}">
                             <td class="">{{ event.name }}</td>
                             <td class="">{{ event.owner }}</td>
                             <td>{{ event.location }}</td>
