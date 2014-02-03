@@ -13,8 +13,8 @@ angular.module('gdgilSiteApp', [
 				controller: 'MainCtrl'
 			})
 			.when('/events', {
-				templateUrl: 'views/under.html',
-				controller: 'MainCtrl'
+				templateUrl: 'views/events.html',
+				controller: 'EventsCtrl'
 			})
 			.when('/videos', {
 				templateUrl: 'views/videos.html',
