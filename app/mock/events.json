@@ -1,7 +1,7 @@
 [
     {
         "id" : "1",
-        "name" : "event name",
+        "name" : "event name 1",
         "owner" : "DGD - Tel Aviv",
         "location" : "Tel-Aviv",
         "date" : 1288323623006,
@@ -10,7 +10,7 @@
     },
     {
         "id" : "2",
-        "name" : "event name",
+        "name" : "event name 2",
         "owner" : "DGD - Herzeliya",
         "location" : "Tel-Aviv",
         "date" : 1288323623006,
@@ -19,7 +19,7 @@
     },
     {
         "id" : "3",
-        "name" : "event name",
+        "name" : "event name 3",
         "owner" : "DGD - Haifa",
         "location" : "Tel-Aviv",
         "date" : 1288323623006,
@@ -28,7 +28,7 @@
     },
     {
         "id" : "4",
-        "name" : "event name",
+        "name" : "event name 4",
         "owner" : "DGD - Haifa",
         "location" : "Haifa",
         "date" : 1288323623006,
@@ -37,10 +37,19 @@
     },
     {
         "id" : "5",
-        "name" : "event name",
+        "name" : "event name 5",
         "owner" : "DGD - Tel Aviv",
         "location" : "Tel-Aviv",
         "date" : 1288323623006,
+        "link" : "http://www.google.com",
+        "description" : "description"
+    },
+    {
+        "id" : "6",
+        "name" : "event name 6",
+        "owner" : "DGD - Tel Aviv",
+        "location" : "Tel-Aviv",
+        "date" : 1288323633006,
         "link" : "http://www.google.com",
         "description" : "description"
     }
