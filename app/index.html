@@ -33,12 +33,13 @@
 	</head>
 	<body ng-app="gdgilSiteApp">
 		<!-- Add your site or application content here -->
-		<div class="container-fluid">
+		<div class="container-fluid" gdg-responsive-sidebar>
 			<div ng-include="'views/sidebar.html'"></div>
 			<div id="content">
 				<div class="navbar hidden-print main" role="navigation">
 					<div class="user-action user-action-btn-navbar pull-left border-right">
-						<button class="btn btn-sm btn-navbar btn-inverse btn-stroke"><i class="fa fa-bars fa-2x"></i>
+						<button id="gdg-responsive-sidebar-toggle-btn" class="btn btn-sm btn-navbar btn-inverse btn-stroke">
+							<i class="fa fa-bars fa-2x"></i>
 						</button>
 					</div>
                     <ul class="main pull-right">
@@ -93,13 +94,11 @@
         <script src="scripts/controllers/articles.js"></script>
 		<script src="scripts/controllers/sidebar.js"></script>
 		<script src="scripts/controllers/content.js"></script>
+		<script src="scripts/directives/responsiveSidebar.js"></script>
 		<script src="scripts/filters/splitToColumns.js"></script>
 		<script src="scripts/filters/unique.js"></script>
 		<script src="scripts/services/contentProvider.js"></script>
 		<script src="scripts/services/parse.js"></script>
 		<!-- endbuild -->
-
-        <!--script src="assets/components/library/modernizr/modernizr.js?v=v1.0.0"></script-->
-
 	</body>
 </html>

@@ -1,1 +1,26 @@
-/* Put here your custom CSS */
+@import "compass/css3/transition";
+
+/* Responsive Sidebar */
+#menu {
+	@include transition(opacity 0.4s, width 0.4s);
+	opacity: 1;
+}
+
+#content {
+	@include transition(margin 0.4s);
+}
+
+#footer {
+	@include transition(left 0.4s);
+}
+
+.container-fluid.menu-hidden {
+	#menu {
+		opacity: 0;
+		width: 0px;
+	}
+
+	#content {
+		margin-left: 0;
+	}
+}
