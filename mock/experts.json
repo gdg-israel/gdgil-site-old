@@ -55,5 +55,13 @@
         "link": "experts/omri_baumer",
         "introduction": "",
         "linkedin": "http://il.linkedin.com/pub/omri-baumer/2/610/810"
+    },
+        {
+        "id": "8",
+        "name": "Yossi Elkrief",
+        "image": "images/experts/yossi_elkrief.jpg",
+        "link": "experts/yossi_elkrief",
+        "introduction": "Mobile fanatic and Tech enthusiast  in a single package. Lectures and mentors Android and mobile dev.  Droid soul with Fanboy looks :) Official LFC supporters branch chairman is my other big passion.  ",
+        "linkedin": "http://il.linkedin.com/in/yossielkrief"
     }
 ]
