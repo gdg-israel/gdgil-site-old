@@ -12,10 +12,6 @@ angular.module('gdgilSiteApp', [
 				templateUrl: 'views/main.html',
 				controller: 'MainCtrl'
 			})
-			.when('/events', {
-				templateUrl: 'views/under.html',
-				controller: 'EventsCtrl'
-			})
 			.when('/videos', {
 				templateUrl: 'views/videos.html',
 				controller: 'VideosCtrl'
@@ -23,10 +19,6 @@ angular.module('gdgilSiteApp', [
 			.when('/articles', {
 				templateUrl: 'views/articles.html',
 				controller: 'ArticlesCtrl'
-			})
-			.when('/contents', {
-				templateUrl: 'views/under.html',
-				controller: 'MainCtrl'
 			})
 			.when('/item/:id', {
 				templateUrl: 'views/content.html',
