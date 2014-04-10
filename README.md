@@ -3,6 +3,8 @@ gdgil-site
 
 gdg.co.il website
 
+[![Build Status](https://travis-ci.org/gdg-israel/gdgil-site.png?branch=master)](https://travis-ci.org/gdg-israel/gdgil-site)
+
 ## Setup instructions
 
 1. Install node.js (version 0.10.0 or newer), npm, ruby (version 1.9.2 or newer), git command-line client (version 1.8.4 or newer)
