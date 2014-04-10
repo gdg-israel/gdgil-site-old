@@ -24,3 +24,7 @@
 		margin-left: 0;
 	}
 }
+
+body > .container-fluid {
+	padding-left: 0; /* override bootstrap container padding in favor of the side bar */
+}
