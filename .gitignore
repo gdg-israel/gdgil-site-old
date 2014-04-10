@@ -1,7 +1,8 @@
-.idea
-node_modules
-dist
-.tmp
-.sass-cache
 .grunt
+.idea
+.sass-cache
+.tmp
 app/bower_components
+coverage
+dist
+node_modules
