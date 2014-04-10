@@ -5,5 +5,5 @@ angular.module('gdgilSiteApp')
 		$scope.experts = $resource('/mock/experts.json').query();
 		$scope.$watchCollection('experts', function(experts) {
 			$scope.expertsInColumns = splitToColumns.splitToColumns(experts, 4);
-		})
+		});
 	});
