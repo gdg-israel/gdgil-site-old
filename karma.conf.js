@@ -9,7 +9,6 @@ module.exports = function (config) {
 		browsers: ['PhantomJS'],
 		browserNoActivityTimeout: 60000,
 		files: [
-			'app/bower_components/es5-shim/es5-shim.js',
 			'app/bower_components/jquery/jquery.js',
 			'app/bower_components/angular/angular.js',
 			'app/bower_components/angular-mocks/angular-mocks.js',
